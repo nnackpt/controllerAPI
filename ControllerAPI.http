@@ -18,10 +18,10 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "id": 3,
-    "username": "user3",
-    "email": "user3@example.com",
-    "fullname": "user three"
+    "id": 1,
+    "username": "user1",
+    "email": "user1@example.com",
+    "fullname": "user one"
 }
 
 ###
@@ -42,6 +42,12 @@ Accept: application/json
 
 // delete user
 DELETE {{ControllerAPI_HostAddress}}/User/3
+Accept: application/json
+
+###
+
+// delete all users
+DELETE {{ControllerAPI_HostAddress}}/User
 Accept: application/json
 
 ###

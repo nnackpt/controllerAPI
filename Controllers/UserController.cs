@@ -86,4 +86,12 @@ public class UserController : ControllerBase
         _users.Remove(user);
         return NoContent();
     }
+
+    // delete all user
+    [HttpDelete]
+    public ActionResult DeleteAllUsers()
+    {
+        _users.Clear();
+        return NoContent();
+    }
 }
